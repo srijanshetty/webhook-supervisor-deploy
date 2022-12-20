@@ -6,7 +6,7 @@ MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += -j 8
 
 watch:
-	uvicorn main:app --reload
+	uvicorn main:app --reload --port=8001
 
 clean:
 	rm -rf __pycache__
